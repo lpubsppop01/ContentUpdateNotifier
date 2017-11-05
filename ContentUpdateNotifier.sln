@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentUpdateNotifier", "ContentUpdateNotifier\ContentUpdateNotifier.csproj", "{946A2AB2-6BD7-4D85-9B95-E26532717C2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E38F0C7E-5C71-4EB0-B6EA-5E325E03E5C8}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentUpdateNotifierTests", "ContentUpdateNotifierTests\ContentUpdateNotifierTests.csproj", "{8193FB9F-5838-4A0F-922E-DDF762AC4BF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{946A2AB2-6BD7-4D85-9B95-E26532717C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{946A2AB2-6BD7-4D85-9B95-E26532717C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{946A2AB2-6BD7-4D85-9B95-E26532717C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{946A2AB2-6BD7-4D85-9B95-E26532717C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8193FB9F-5838-4A0F-922E-DDF762AC4BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8193FB9F-5838-4A0F-922E-DDF762AC4BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8193FB9F-5838-4A0F-922E-DDF762AC4BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8193FB9F-5838-4A0F-922E-DDF762AC4BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E2A91BE-B6AA-43C8-A166-824EBF50F076}
+	EndGlobalSection
+EndGlobal
