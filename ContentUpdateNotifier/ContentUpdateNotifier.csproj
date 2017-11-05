@@ -39,6 +39,16 @@
   <PropertyGroup>
     <ApplicationIcon>ContentUpdateNotifier.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Publish|AnyCPU'">
+    <OutputPath>bin\Publish\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.WindowsAPICodePack-Core.1.1.0.2\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
@@ -177,6 +187,7 @@
   </Target>
   <PropertyGroup>
     <PostBuildEvent>mkdir "$(ProjectDir)$(OutDir)_Images"
-copy /Y "$(ProjectDir)_Images\ContentUpdateNotifier_64x64.png" "$(ProjectDir)$(OutDir)_Images"</PostBuildEvent>
+copy /Y "$(ProjectDir)_Images\ContentUpdateNotifier_64x64.png" "$(ProjectDir)$(OutDir)_Images"
+powershell -File "$(SolutionDir)ArchiveBuildResult.ps1" $(ConfigurationName)</PostBuildEvent>
   </PropertyGroup>
 </Project>
