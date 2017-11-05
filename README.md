@@ -1,4 +1,6 @@
 # ContentUpdateNotifier
+[![Build status](https://ci.appveyor.com/api/projects/status/alu5ho1xjgy3byas?svg=true)](https://ci.appveyor.com/project/lpubsppop01/contentupdatenotifier)
+
 This is a simple application to notify update of target files.
 
 ## Features
@@ -6,6 +8,9 @@ This is a simple application to notify update of target files.
 - Show target list window by click the tray icon
 - When registered target files are edited or removed, show toast notification
 - Open folder that contains the edited or removed file by click the toast notification
+
+## Download
+[ContentUpdateNotifier Latest Build - AppVeyor](https://ci.appveyor.com/api/projects/lpubsppop01/contentupdatenotifier/artifacts/lpubsppop01.ContentUpdateNotifier_Publish_Any_CPU.zip)
 
 ## Requirements
 - To use
