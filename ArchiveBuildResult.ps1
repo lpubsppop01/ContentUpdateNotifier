@@ -30,6 +30,7 @@ Copy-Item (Join-Path $srcBinDirPath "Microsoft.WindowsAPICodePack.Shell.dll") $w
 Copy-Item (Join-Path $srcBinDirPath "Microsoft.WindowsAPICodePack.ShellExtensions.dll") $workBinDirPath
 Copy-Item (Join-Path $srcBinDirPath "System.Data.SQLite.dll") $workBinDirPath
 Copy-Item (Join-Path $srcBinDirPath "System.Data.SQLite.dll.config") $workBinDirPath
+Copy-Item (Join-Path $srcBinDirPath "System.ValueTuple.dll") $workBinDirPath
 Copy-Item -Recurse (Join-Path $srcBinDirPath "x86") $workBinDirPath
 Copy-Item -Recurse (Join-Path $srcBinDirPath "x64") $workBinDirPath
 Copy-Item -Recurse (Join-Path $srcBinDirPath "_Images") $workBinDirPath
